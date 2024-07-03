@@ -649,9 +649,9 @@ button:hover .button-text {
     }
 
     .imagecontainer {
-        height: 270px;
-        width: 360px;
-        min-width: 360px;
+        height: 240px;
+        width: 320px;
+        min-width: 320px;
     }
 }
 
