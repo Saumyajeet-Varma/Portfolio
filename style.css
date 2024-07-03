@@ -508,7 +508,8 @@ button:hover .button-text {
 .imagecontainer {
     height: 360px;
     width: 480px;
-    min-width: 480px;
+    min-height: 240px;
+    min-width: 320px;
     object-fit: cover;
     margin: 20px 50px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 15px rgba(0, 0, 0, 0.10);
@@ -651,7 +652,6 @@ button:hover .button-text {
     .imagecontainer {
         height: 240px;
         width: 320px;
-        min-width: 320px;
     }
 }
 
