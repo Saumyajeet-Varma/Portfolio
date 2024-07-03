@@ -11,6 +11,7 @@ html {
 
 body {
     background: #dddddd;
+    overflow-x: hidden;
 }
 
 .box-oy {
@@ -724,14 +725,13 @@ button:hover .button-text {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 500px;
 }
 
 .container {
     position: relative;
-    /* width: 1100px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -857,6 +857,16 @@ button:hover .button-text {
     }
 }
 
+@media(max-width: 385px) {
+    .cardholder {
+        margin: auto 0px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+}
+
 /* ---------- CONTACT ---------- */
 .contact {
     background: #353535;
@@ -908,7 +918,6 @@ button:hover .button-text {
 .contactlist {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     margin: 25px 0px 15px 0px;
 }
@@ -962,7 +971,6 @@ button:hover .button-text {
     align-items: center;
     width: 350px;
     margin: 15px 0px;
-    /* background: red; */
 }
 
 .contactlink {
@@ -1080,6 +1088,17 @@ form button:hover {
 
     .contactlist .listitem .label p {
         font-size: 16px;
+    }
+
+    .contactlink {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media(max-width: 450px) {
+    .contactlinks {
+        width: 300px;
     }
 
     .contactlink {
