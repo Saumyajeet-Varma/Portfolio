@@ -4,91 +4,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title of webpage -->
-    <title>Chess.sv</title>
+    <title>Portfolio</title>
 
     <!-- Link to connect CSS file -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Favicon -->
-    <link rel="icon" href="Assets/images/logo.png">
+    <!-- Link to connect Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Port+Lligat+Slab&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Links to connect Awesomefont -->
     <link rel="stylesheet" href="path/to/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to connect jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </head>
 
 <body>
-    <main>
-        <div class="logo">
-            <img src="Assets/images/logoname.png" alt="">
-        </div>
-        <div class="d-flex">
-            <div id="root"></div>
-            <div id="moveLog">
-                <ol></ol>
-            </div>
-        </div>
 
-        <!-- ISSUE -->
-        <div class="issue">
-            <i class="fa-solid fa-circle-exclamation ired"></i>
-        </div>
-        <div class="issuemsg hide">
-            <div class="issuelogo">
-                <img src="Assets/images/logoname.png" alt="">
+    <div class="scroll-up-button">
+        <i class="fa-solid fa-circle-up"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <div class="max-width">
+
+                <div class="logo"><a href="#">SV</a></div>
+
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+
             </div>
-            <div class="msg">
-                <ol>
-                    <li>
-                        <b>Lack of Checkmate Detection</b>
-                        <p>The current implementation does not accurately detect a checkmate scenario, allowing the game
-                            to
-                            continue indefinitely after a winning position is achieved.</p>
-                    </li>
-                    <li>
-                        <b>Lack of Forced Check Defense</b>
-                        <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in
-                            a
-                            check or checkmate, affecting the overall gameplay integrity.</p>
-                    </li>
-                    <li>
-                        <b>Check After Promotion Not Implemented</b>
-                        <p>After a pawn is promoted, the game does not correctly verify whether the promotion results in
-                            a
-                            check or checkmate, affecting the overall gameplay integrity.</p>
-                    </li>
-                    <li>
-                        <b>Incorrect Castling Logic</b>
-                        <p>The current castling logic fails to detect when a square between the king and rook is under
-                            check, allowing castling in scenarios where it should be invalid according to chess rules.
-                        </p>
-                    </li>
-                    <li>
-                        <b>Piece Movement Bug</b>
-                        <p>Intermittent issues with piece movement have been observed, where pieces stop responding or
-                            moving after a certain time during the game. This impacts the fluidity of the game
-                            experience.
-                        </p>
-                    </li>
-                </ol>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <div class="empty-space"></div>
+
+        <!-- HOME -->
+        <section class="home" id="home">
+
+            <div class="homeBox box-oy">
+
+                <div class="home-info">
+
+                    <div class="homeText">
+                        <div class="text-1">Hello, my name is</div>
+                        <div class="text-2">Saumyajeet Varma</div>
+                        <div class="text-3">And I'm a <span>Web Developer</span></div>
+                    </div>
+
+                    <div class="homelinks">
+                        <div class="homelink">
+                            <a href="https://www.instagram.com/_saumyajeet_/
+                            "><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="homelink">
+                            <a href="https://github.com/Saumyajeet-Varma"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="homelink">
+                            <a
+                                href="https://www.linkedin.com/in/saumyajeet-varma-91bb4025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="homelink">
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="chessV2">
-                Chess.sv Version 2 - <a href="#">Chess-v2</a> <br> (Coming soon...)
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+
+            <div class="rest-empty-space"></div>
+
+            <div class="headtext">ABOUT</div>
+
+            <div class="aboutBox">
+
+                <div class="basicinfo">
+
+                    <div class="imagecontainer">
+                        <img src="images/pikachu.jpg" alt="">
+                    </div>
+
+                    <div class="basicpointslist">
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">Name :</p>
+                            <p class="value">Saumyajeet Varma</p>
+                        </div>
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">Age :</p>
+                            <p class="value">21</p>
+                        </div>
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">Phone :</p>
+                            <p class="value">+91 6370650855</p>
+                        </div>
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">E-mail :</p>
+                            <p class="value">saumyajeetvarma10@gmail.com</p>
+                        </div>
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">Address :</p>
+                            <p class="value">Sambalpur, Odisha</p>
+                        </div>
+
+                        <div class="basicpoint">
+                            <span class="odot"></span>
+                            <p class="key">Freelance :</p>
+                            <p class="value">Available</p>
+                        </div>
+
+                        <button class="resume"><a href="">DOWNLOAD RESUME</a></button>
+
+                    </div>
+                </div>
+
+                <div class="parainfo">
+
+                    <div class="aboutline"></div>
+
+                    <div class="paralist">
+                        <div class="odot"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro velit odit ipsa
+                            officia id perspiciatis laudantium voluptatum earum modi accusantium praesentium sit vel
+                            voluptatem vero itaque dignissimos, similique cupiditate nisi animi laboriosam aliquid
+                            excepturi voluptatibus. Mollitia voluptatem amet minus?</p>
+                    </div>
+
+                    <div class="aboutline"></div>
+
+                    <div class="paralist">
+                        <div class="odot"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro velit odit ipsa
+                            officia id perspiciatis laudantium voluptatum earum modi accusantium praesentium sit vel
+                            voluptatem vero itaque dignissimos, similique cupiditate nisi animi laboriosam aliquid
+                            excepturi voluptatibus. Mollitia voluptatem amet minus?</p>
+                    </div>
+
+                    <div class="aboutline"></div>
+
+                    <div class="paralist">
+                        <div class="odot"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro velit odit ipsa
+                            officia id perspiciatis laudantium voluptatum earum modi accusantium praesentium sit vel
+                            voluptatem vero itaque dignissimos, similique cupiditate nisi animi laboriosam aliquid
+                            excepturi voluptatibus. Mollitia voluptatem amet minus?</p>
+                    </div>
+
+                    <div class="aboutline"></div>
+
+                    <div class="paralist">
+                        <div class="odot"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro velit odit ipsa
+                            officia id perspiciatis laudantium voluptatum earum modi accusantium praesentium sit vel
+                            voluptatem vero itaque dignissimos, similique cupiditate nisi animi laboriosam aliquid
+                            excepturi voluptatibus. Mollitia voluptatem amet minus?</p>
+                    </div>
+
+                    <div class="aboutline"></div>
+
+                    <div class="paralist">
+                        <div class="odot"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro velit odit ipsa
+                            officia id perspiciatis laudantium voluptatum earum modi accusantium praesentium sit vel
+                            voluptatem vero itaque dignissimos, similique cupiditate nisi animi laboriosam aliquid
+                            excepturi voluptatibus. Mollitia voluptatem amet minus?</p>
+                    </div>
+
+                    <div class="aboutline"></div>
+
+                </div>
+
             </div>
-        </div>
+
+        </section>
+
+        <!-- SKILL -->
+        <section class="skill" id="skill">
+
+            <div class="rest-empty-space"></div>
+
+            <div class="headtext">SKILLS</div>
+
+            <div class="skillBox">
+
+                <div class="skillbox-element">
+                    <div class="skillbox-name">
+                        <p>Programming</p>
+                    </div>
+                    <div class="skillset">
+                        <img src="https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000" alt="">
+                        <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000" alt="">
+                        <img src="https://img.icons8.com/?size=70&id=PXTY4q2Sq2lG&format=png&color=000000" alt="">
+                    </div>
+                </div>
+
+                <div class="skillline"></div>
+
+                <div class="skillbox-element">
+                    <div class="skillbox-name">
+                        <p>Frontend</p>
+                    </div>
+                    <div class="skillset">
+                        <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" alt="">
+                        <img src="https://img.icons8.com/color/70/000000/css3.png" alt="">
+                        <img src="https://img.icons8.com/?size=70&id=PXTY4q2Sq2lG&format=png&color=000000" alt="">
+                    </div>
+                </div>
+
+                <div class="skillline"></div>
+
+                <div class="skillbox-element">
+                    <div class="skillbox-name">
+                        <p>Frameworks / Library</p>
+                    </div>
+                    <div class="skillset">
+                        <img src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" alt="">
+                        <img src="https://img.icons8.com/?size=100&id=9Um0Q4sZ0QCC&format=png&color=000000" alt=""
+                            id="jquery">
+                        <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000" alt="">
+                    </div>
+                </div>
+
+                <div class="skillline"></div>
+
+                <div class="skillbox-element">
+                    <div class="skillbox-name">
+                        <p>Database</p>
+                    </div>
+                    <div class="skillset">
+                        <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt="">
+                    </div>
+                </div>
+
+                <div class="skillline"></div>
+
+                <div class="skillbox-element">
+                    <div class="skillbox-name">
+                        <p>Version Control System</p>
+                    </div>
+                    <div class="skillset">
+                        <img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECT -->
+        <section class="project" id="project">
+
+            <div class="rest-empty-space"></div>
+
+            <div class="headtext">PROJECTS</div>
+
+            <div class="cardholder">
+
+                <div class="container">
+                    <div class="card">
+                        <div class="image chessbg">
+                            <img href="#" src="images/chess(1024x829).png">
+                        </div>
+                        <div class="content">
+                            <h3>SVscript</h3>
+                            <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to</p>
+                            <div class="projectlinks">
+                                <button class="projectlink githubscale"><a href=""><i
+                                            class="fa-brands fa-github"></i></a></button>
+                                <button class="projectlink"><a href=""><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="card">
+                        <div class="image chessbg">
+                            <img href="#" src="images/chess(1024x829).png">
+                        </div>
+                        <div class="content">
+                            <h3>Chess</h3>
+                            <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to</p>
+                            <div class="projectlinks">
+                                <button class="projectlink githubscale"><a href=""><i
+                                            class="fa-brands fa-github"></i></a></button>
+                                <button class="projectlink"><a href=""><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="card">
+                        <div class="image chessbg">
+                            <img href="#" src="images/chess(1024x829).png">
+                        </div>
+                        <div class="content">
+                            <h3>Chess</h3>
+                            <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to</p>
+                            <div class="projectlinks">
+                                <button class="projectlink githubscale"><a href=""><i
+                                            class="fa-brands fa-github"></i></a></button>
+                                <button class="projectlink"><a href=""><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button-box"><a href="#">
+                    <div class="button-container">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">See More</span>
+                        </button>
+                    </div>
+                </a></div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+
+            <div class="rest-empty-space"></div>
+
+            <div class="contact-head">CONTACT</div>
+
+            <div class="contactBox">
+
+                <div class="contact-info contactBoxelement">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to contact me for opportunities as a Frontend web developer, or any kind of discussion
+                        related to tech. I will try my best to reply as soon as possible.</p>
+
+                    <div class="contactlist">
+
+                        <div class="listitem">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="label">
+                                <h3>Contact Number</h3>
+                                <p>+91 6370650855</p>
+                            </div>
+                        </div>
+
+                        <div class="listitem">
+                            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="label">
+                                <h3>Contact Mail</h3>
+                                <p>saumyajeetvarma10@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="listitem">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="label">
+                                <h3>Contact Address</h3>
+                                <p>IIIT Bhubaneswar, Khordha, Odisha, India - 751003</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contactlinks">
+                        <div class="contactlink">
+                            <a href="https://www.instagram.com/_saumyajeet_/
+                            "><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="contactlink">
+                            <a href="https://github.com/Saumyajeet-Varma"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="contactlink">
+                            <a
+                                href="https://www.linkedin.com/in/saumyajeet-varma-91bb4025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="contactlink">
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form contactBoxelement">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="a870d080-ea8c-45c3-ac64-63ad12ba024c">
+                        <p class="emaillabel">Name</p>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                        <p class="emaillabel">Email</p>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                        <p class="emaillabel">Message</p>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter youe Message"
+                            required></textarea>
+                        <button type="submit">SEND</button>
+                        <div id="result"></div>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
-        Created by <a href="https://saumyajeet-varma.github.io/Portfolio/" target="_blank">Saumyajeet Varma</a>
+        <p>Created by <a href="#">Saumyajeet Varma</a></p>
     </footer>
 
-    <!-- Links to connect JS files -->
-    <script type="module" src="script.js"></script>
-    <script src="issue.js"></script>
+    <!-- Link to connect Javascript file -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
