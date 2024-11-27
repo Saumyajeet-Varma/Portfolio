@@ -691,6 +691,7 @@ button:hover .button-text {
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .skillset img {
@@ -710,7 +711,7 @@ button:hover .button-text {
 }
 
 /* ---------- RESPONSIVE SKILL ---------- */
-@media(max-width: 650px) {
+@media(max-width: 911px) {
     .skillbox-element {
         display: flex;
         justify-content: space-evenly;
@@ -720,6 +721,13 @@ button:hover .button-text {
 
     .skillbox-name {
         margin: 10px auto;
+    }
+
+    .skillset {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
